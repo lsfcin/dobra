@@ -1,0 +1,9 @@
+# Dobra repo ignores
+.venv/
+__pycache__/
+*.pyc
+runs/
+eval/results/raw/
+node_modules/
+.mypy_cache/
+.pytest_cache/
