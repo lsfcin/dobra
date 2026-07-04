@@ -11,7 +11,7 @@
   bounded leaf work — the inversion that makes SLMs viable ([NVIDIA position, arXiv 2506.02153](https://arxiv.org/abs/2506.02153)).
 - **Verified folds**: every summary passes a verifier gate before entering parent context.
 - **Adapts to your hardware**: declare models in `models.yaml`; the router does the rest.
-- Twin research project: methodology, prereg, and literature in `academy/papers/2026-WIP-dobra`.
+- Twin research project: methodology, prereg, and literature in `academy/papers/2027-ICLR-dobra`.
 
 ## Architecture
 

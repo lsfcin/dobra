@@ -1,5 +1,5 @@
 # Dobra ↔ Paper Bridge (code side)
-> Cross-duties binding this repo to `academy/papers/2026-WIP-dobra`. The paper's mirror copy of these duties lives there as BRIDGE.md. Task IDs: D* = code, P* = paper.
+> Cross-duties binding this repo to `academy/papers/2027-ICLR-dobra`. The paper's mirror copy of these duties lives there as BRIDGE.md. Task IDs: D* = code, P* = paper.
 
 ## Why this file
 

@@ -1,5 +1,5 @@
 # Dobra
-> Context folding + small local models: task-tree runner where SLMs do leaf work under folded context. Paper twin: `academy/papers/2026-WIP-dobra`.
+> Context folding + small local models: task-tree runner where SLMs do leaf work under folded context. Paper twin: `academy/papers/2027-ICLR-dobra`.
 
 ## Overview
 
@@ -34,6 +34,7 @@ do leaf-level cognition. See [SPECS.md](SPECS.md) for the constitution.
 
 | File | Interface | API | Description |
 |------|-----------|-----|-------------|
+| [`dobra/__init__.py`](dobra/__init__.py) | [`dobra/__init__.pyi`](dobra/__init__.pyi) | — | **facade** — Dobra package facade — public API grows here as kernel modules land (SPECS.md interfaces). |
 | [`BRIDGE.md`](BRIDGE.md) | — | — | Dobra ↔ Paper Bridge (code side) |
 | [`DECISIONS.md`](DECISIONS.md) | — | — | Dobra — Decisions |
 | [`EVAL.md`](EVAL.md) | — | — | Dobra — Eval Preregistration |
@@ -45,4 +46,5 @@ do leaf-level cognition. See [SPECS.md](SPECS.md) for the constitution.
 | [`SETUP.md`](SETUP.md) | — | — | Dobra — Dev Setup |
 | [`SPECS.md`](SPECS.md) | — | — | Dobra — Specs |
 | [`models.yaml`](models.yaml) | — | — | Model inventory — the ONLY source of model availability (SPECS principle 6). Edit per machine; router adapts. |
+| [`tests/test_smoke.py`](tests/test_smoke.py) | [`tests/test_smoke.pyi`](tests/test_smoke.pyi) | `test_package_imports` | Smoke test — proves the verify:fast gate wiring; real suites arrive with each D-task. |
 <!-- routing:end -->

@@ -11,6 +11,13 @@ Milestone D0 active — nothing started. Next task: D0.1.
      triage into milestones at session start. Format:
      - [ ] (from P<id>) one-line request — why the paper needs it -->
 
+- [ ] (from P1/letta2026) hands-on letta-code session: `npm i -g @letta-ai/letta-code`,
+  inspect MemFS layout + sleep-time subagent behavior — architecture recon before D1.3
+  assembler design; write findings to eval/results/letta-recon.md
+- [ ] (from P2) when E3 prereg is refined at D3.1: consider a Letta baseline arm
+  (letta-code + same SLM) — related-work map says it's our closest neighbor; decide and
+  record in EVAL.md E3 before any E3 run
+
 ## Backlog
 
 - Chat REPL (`dobra chat`) — after D2

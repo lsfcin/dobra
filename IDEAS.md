@@ -8,4 +8,7 @@
 - RIG-style deterministic repo graph (arXiv 2601.10112) as a role's attachment for code tasks (D3+)
 - model swap scheduling: order tree execution to minimize ollama model loads on 6GB (one resident model)
 - FOLD.md quality self-play: folder writes, verifier scores, keep best-of-k — trace gold for D4 LoRA
+- sleep-time defrag (letta/sleeptime2025 idea, our axis): idle-time role that re-folds stale FOLD.md chains, merges duplicates across sibling folds — AFTER kernel stable, measure before adopting
+- git-versioned runs/ (letta MemFS convergence): commit per fold → free undo/diff of agent memory; check fs overhead first
+- kimi report's inverse tiering (big manager + small worker) as an E2/E3 comparison arm — dobra's stance is code-manager; the LLM-manager arm would quantify what code replaces
 - U-Fold / AgentFold / FoldAct / ACON policy variants as pluggable FoldPolicy implementations for E2-style comparison

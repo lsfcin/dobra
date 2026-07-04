@@ -98,7 +98,7 @@ with one output contract, never multi-step protocols.
   Dobra stays standalone; see DECISIONS.md AD-1 for the merge-back condition.
 - `core/flows/summarize.md` — prose spec of the tiered fold policy; port it as code
   (D1.4), do not interpret it with a model.
-- Paper twin `academy/papers/2026-WIP-dobra` — every measured number there must trace to
+- Paper twin `academy/papers/2027-ICLR-dobra` — every measured number there must trace to
   a `runs/` artifact here. Cross-duties: [BRIDGE.md](BRIDGE.md).
 
 ## Conventions
