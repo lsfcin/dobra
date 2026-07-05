@@ -1,5 +1,6 @@
 # Dobra
 > Context folding + small local models: task-tree runner where SLMs do leaf work under folded context. Paper twin: `academy/papers/2027-ICLR-dobra`.
+> goal: [local-ai](../../brain/goals/local-ai.md)
 
 ## Overview
 
@@ -31,6 +32,10 @@ do leaf-level cognition. See [SPECS.md](SPECS.md) for the constitution.
 
 <!-- routing:start -->
 ## Routing
+
+| Subdirectory | Description |
+|--------------|-------------|
+| [`refs/`](refs/CONTEXT.md) | Captured references for dobra — tier-1 links in [REFS.md](REFS.md); promote to ` |
 
 | File | Interface | API | Description |
 |------|-----------|-----|-------------|
