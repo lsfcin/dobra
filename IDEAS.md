@@ -12,3 +12,6 @@
 - git-versioned runs/ (letta MemFS convergence): commit per fold → free undo/diff of agent memory; check fs overhead first
 - kimi report's inverse tiering (big manager + small worker) as an E2/E3 comparison arm — dobra's stance is code-manager; the LLM-manager arm would quantify what code replaces
 - U-Fold / AgentFold / FoldAct / ACON policy variants as pluggable FoldPolicy implementations for E2-style comparison
+- visualize context trees folding/unfolding — a dobra viz of the fold structure animating (INBOX 2026-07)
+- mine the Fable-5 system-prompt leak for context-folding insights → apply to dobra (INBOX 2026-07); links in refs/REFS.md
+- model-cost router: score cost × quality per subtask, pick best model per leaf; keep a live benchmark via OpenRouter API (INBOX 2026-07)
