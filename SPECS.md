@@ -99,7 +99,41 @@ with one output contract, never multi-step protocols.
 - `core/flows/summarize.md` — prose spec of the tiered fold policy; port it as code
   (D1.4), do not interpret it with a model.
 - Paper twin `academy/papers/2027-ICLR-dobra` — every measured number there must trace to
-  a `runs/` artifact here. Cross-duties: [BRIDGE.md](BRIDGE.md).
+  a `runs/` artifact here. Cross-duties: § Twin below.
+
+## Twin — cross-duties
+
+> Was `BRIDGE.md`, folded here 2026-07-30. These are invariants binding two repos, not a
+> separate type: "every measured number files a P-task" is a rule about what must be true.
+> Task ids: `D*` = code, `P*` = paper. The paper repo states the mirror half in its own SPECS.
+
+Coding sessions (here) and paper sessions (paper repo) are each REQUIRED to feed the other.
+That obligation is what keeps dobra an engineering artifact and a sound academic contribution
+at the same time.
+
+**A CODING session must** (read at start, act at end):
+1. **Results flow to the paper.** Produced any measured number (microbench, eval, ablation)?
+   → append to paper `ROADMAP.md § Inbox from code`:
+   `- [ ] (from D<task>) <one-line result> — runs/<id>, eval/results/<file>`.
+2. **Decisions check literature.** Before writing a DECISIONS.md entry, check the paper's
+   `reviews/`: does a reviewed paper already answer this? Cite the review key in the Basis line.
+3. **New SOTA sighting.** Found a relevant paper while coding? → add a stub `reviews/<key>.yaml`
+   in the paper repo with url + one-line relevance. The paper session completes it.
+4. **Claims need evidence.** A claim in README must name a run id or test. Unproven claims are
+   written as "TODO: measure (→ E<n>)".
+
+**A PAPER session must** (mirror, stated in the paper's own SPECS):
+1. Scan code `ROADMAP.md` history and `DECISIONS.md` since the last paper session; file
+   experiment gaps as D-tasks in code `ROADMAP.md § Inbox from paper`.
+2. Audit DECISIONS.md `invalidated-if` triggers against newly reviewed literature; if one
+   fired, file a D-task quoting the trigger.
+3. Keep `reviews/` current — complete stubs left by coding sessions, monthly `/research watch`.
+4. Never write a number the code repo cannot trace to `runs/`. EVAL.md binds the paper too.
+
+**Shared invariants:**
+- EVAL.md (this repo) is the single prereg registry. The paper cites it; it cites the paper's reviews.
+- A P-task or D-task filed across the twin always names its origin task id.
+- Twin inboxes are triaged at the START of the receiving side's next session — never left >2.
 
 ## Conventions
 

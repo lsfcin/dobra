@@ -1,5 +1,5 @@
 # Dobra — Roadmap
-> Pending work only. Completed milestones move to HISTORY.md. Task IDs are permanent (D<milestone>.<n>).
+> Pending work only. Completed milestones are deleted (git is the history). Task IDs are permanent (D<milestone>.<n>).
 
 ## Status
 
@@ -23,6 +23,8 @@ Milestone D0 active — nothing started. Next task: D0.1.
 - Chat REPL (`dobra chat`) — after D2
 - opencode adapter — parked in IDEAS.md until kernel stable
 - GAIA subset eval — D3 planning decides scope
+- **SLM survey** (INBOX 2026-07-25) — serious, deep survey: which SLMs exist, for which contexts, benchmarks; and how to connect them efficiently (multi-SLM orchestration). Feeds D0.2 model inventory + the "how to connect" question is dobra's fold-kernel thesis. Ref: [local-ai](../../brain/goals/local-ai.md).
+- **colibri assessment** (INBOX 2026-07-25, ref in refs/REFS.md) — investigate colibri (GPU LLM runtime) as a leaf backend candidate vs ollama; note tokens/s + VRAM fit on RTX 3050.
 
 ---
 
@@ -34,9 +36,11 @@ reference GPU (RTX 3050 6GB), and the model inventory format the whole system re
 
 ### Checklist
 - [ ] **D0.1 venv + verify gate.** Create `.venv` (python3.11+), `pip install pytest pyyaml
-  requests`, write `pyproject.toml`, add `package.json` with `"verify:fast": ".venv/bin/python -m pytest -q tests"`.
+  requests`, write `pyproject.toml`, add a `Makefile` with a `verify-fast:` target running
+  `.venv/bin/python -m pytest -q tests` (the pre-commit gate now discovers Makefile targets
+  too, not just package.json — see code/VERIFY.md G1; no need for a fake package.json).
   Keep `tests/test_smoke.py` green.
-  *Acceptance:* `npm run verify:fast` exits 0. Workspace pre-commit gate now enforces it.
+  *Acceptance:* `make verify-fast` exits 0. Workspace pre-commit gate now enforces it.
 - [ ] **D0.2 pull + microbench models.** `ollama pull` the 2 inventory models (check current
   best ≤4GB tags at https://ollama.com/library — expected: qwen3.5:4b class + phi-4-mini class;
   update `models.yaml` with real tags). Write `eval/microbench.py`: measure tokens/s,

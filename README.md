@@ -35,4 +35,4 @@ Milestone D0 (infrastructure) — see [ROADMAP.md](ROADMAP.md).
 TBD.
 
 ---
-[CONTEXT.md](CONTEXT.md) · [SPECS.md](SPECS.md) · [ROADMAP.md](ROADMAP.md) · [SETUP.md](SETUP.md) · [EVAL.md](EVAL.md) · [DECISIONS.md](DECISIONS.md) · [BRIDGE.md](BRIDGE.md)
+[CONTEXT.md](CONTEXT.md) · [SPECS.md](SPECS.md) · [ROADMAP.md](ROADMAP.md) · [SETUP.md](SETUP.md) · [EVAL.md](EVAL.md) · [DECISIONS.md](DECISIONS.md)

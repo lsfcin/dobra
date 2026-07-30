@@ -9,12 +9,24 @@ by explicit context folding, can match frontier LLMs on long-horizon tasks when 
 not constrained. Orchestration lives in Python code, not in model prompts — models only
 do leaf-level cognition. See [SPECS.md](SPECS.md) for the constitution.
 
+**Kinship with `/loops`** (`core/flows/craft/craft.md`): dobra's task-tree runner
+is the *parallel-fan-out* primitive that /loops lacks (cross-repo loops parallelize, same-
+repo loops fight, per the loops `## Field Practice` notes). /loops uses one Carry block per
+sequential chain; dobra uses folded task-tree context — Voyager's "lifelong learning"
+vision (Wang et al. 2023, <https://arxiv.org/abs/2305.16291>) made durable via files.
+LATM's two-tier cost-spreading (Cai et al. 2023,
+<https://arxiv.org/abs/2305.17126>) applies to both: frontier-tier orchestrators,
+SLM-tier leaves. The two projects share a thesis — **the artifact is the memory** — and
+should converge on a shared Carry-block / folded-context convention. See
+`core/flows/craft/prior-art.md` for the citation chain shared by both.
+
+
 ## Session Protocol — mandatory for every agent session
 
 **Start:**
 1. Read [SPECS.md](SPECS.md) — architecture constitution. Never edit code that contradicts it.
 2. Read [ROADMAP.md](ROADMAP.md) — Status line + active milestone only. Ignore later milestones.
-3. Session touches a design decision or produces a measurable result? Read [BRIDGE.md](BRIDGE.md) and do its duties.
+3. Session touches a design decision or produces a measurable result? Read [SPECS.md](SPECS.md) § Twin and do its duties.
 
 **Work:**
 - One ROADMAP task per session (trivial fixes exempt). Task is done only when its
@@ -25,9 +37,9 @@ do leaf-level cognition. See [SPECS.md](SPECS.md) for the constitution.
 - Phase gate: milestone N+1 tasks are LOCKED while milestone N has unchecked acceptance boxes.
 
 **End:**
-- Update ROADMAP checkboxes; move finished milestones to HISTORY.md.
+- Update ROADMAP checkboxes; delete finished milestones (git is the history).
 - If a result is paper-relevant (any measured number, any decision with literature basis) →
-  BRIDGE.md duty: file a P-task in the paper ROADMAP inbox.
+  SPECS.md § Twin duty: file a P-task in the paper ROADMAP inbox.
 - `/handoff` with next task id.
 
 <!-- routing:start -->
@@ -40,12 +52,10 @@ do leaf-level cognition. See [SPECS.md](SPECS.md) for the constitution.
 | File | Interface | API | Description |
 |------|-----------|-----|-------------|
 | [`dobra/__init__.py`](dobra/__init__.py) | [`dobra/__init__.pyi`](dobra/__init__.pyi) | — | **facade** — Dobra package facade — public API grows here as kernel modules land (SPECS.md interfaces). |
-| [`BRIDGE.md`](BRIDGE.md) | — | — | Dobra ↔ Paper Bridge (code side) |
+| [`BUGS.md`](BUGS.md) | — | — | Dobra — Known Bugs |
 | [`DECISIONS.md`](DECISIONS.md) | — | — | Dobra — Decisions |
 | [`EVAL.md`](EVAL.md) | — | — | Dobra — Eval Preregistration |
-| [`HISTORY.md`](HISTORY.md) | — | — | Dobra — History |
 | [`IDEAS.md`](IDEAS.md) | — | — | Dobra — Ideas Parking Lot |
-| [`KNOWN-BUGS.md`](KNOWN-BUGS.md) | — | — | Dobra — Known Bugs |
 | [`README.md`](README.md) | — | — | Dobra |
 | [`ROADMAP.md`](ROADMAP.md) | — | — | Dobra — Roadmap |
 | [`SETUP.md`](SETUP.md) | — | — | Dobra — Dev Setup |
