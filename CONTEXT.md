@@ -47,7 +47,7 @@ should converge on a shared Carry-block / folded-context convention. See
 
 | Subdirectory | Description |
 |--------------|-------------|
-| [`refs/`](refs/CONTEXT.md) | Captured references for dobra — tier-1 links in [REFS.md](REFS.md); promote to ` |
+| [`refs/`](refs/CONTEXT.md) | Captured references for dobra — tier-1 links in [REFS.md](refs/REFS.md); promote |
 
 | File | Interface | Description |
 |------|-----------|-------------|
