@@ -25,6 +25,7 @@ Milestone D0 active — nothing started. Next task: D0.1.
 - GAIA subset eval — D3 planning decides scope
 - **SLM survey** (INBOX 2026-07-25) — serious, deep survey: which SLMs exist, for which contexts, benchmarks; and how to connect them efficiently (multi-SLM orchestration). Feeds D0.2 model inventory + the "how to connect" question is dobra's fold-kernel thesis. Ref: [local-ai](../../brain/goals/local-ai.md).
 - **colibri assessment** (INBOX 2026-07-25, ref in refs/REFS.md) — investigate colibri (GPU LLM runtime) as a leaf backend candidate vs ollama; note tokens/s + VRAM fit on RTX 3050.
+- **SSD-paged experts: does it change the leaf story?** (INBOX 2026-08-17, ref in refs/REFS.md) — a 2.78T MoE claimed to run in 8.24 GB by leaving ~93% of experts on SSD until a token routes to them. Find and name the actual engine first; the reel names none. Then answer one question for dobra: at 33 s/token the technique is useless for interactive leaves, but dobra's own premise is *time is not constrained* — so does expert paging widen which models can be a leaf on a 6 GB machine, or is the SSD requirement (1.56 TB) a worse constraint than the VRAM one it removes?
 
 ---
 
