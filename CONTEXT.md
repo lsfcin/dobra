@@ -52,7 +52,7 @@ should converge on a shared Carry-block / folded-context convention. See
 | File | Interface | Description |
 |------|-----------|-------------|
 | [`dobra/__init__.py`](dobra/__init__.py) | [`dobra/__init__.pyi`](dobra/__init__.pyi) | **facade** — Dobra package facade — public API grows here as kernel modules land (SPECS.md interfaces). |
-| [`BUGS.md`](BUGS.md) | — | Dobra — Known Bugs |
+| [`ISSUES.md`](ISSUES.md) | — | Dobra — Known Bugs |
 | [`DECISIONS.md`](DECISIONS.md) | — | Append-only decision log. Every entry has literature basis + invalidated-if… |
 | [`EVAL.md`](EVAL.md) | — | Benchmarks, metrics, and baselines are FIXED here before the code that runs them… |
 | [`IDEAS.md`](IDEAS.md) | — | Anti-scatter valve. Mid-task ideas land here as one-liners, NEVER in code… |

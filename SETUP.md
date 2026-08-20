@@ -45,4 +45,4 @@ No API keys: cloud backends stay disabled unless `models.yaml § cloud.enabled: 
 npm run verify:fast   # = pytest -q tests; wired into workspace pre-commit gate at D0.1
 ```
 
-Regression specs for BUGS fixes: `tests/b<N>-*.py` (workspace known-bugs-gate).
+Regression specs for ISSUES fixes: `tests/b<N>-*.py` (workspace issues-gate).

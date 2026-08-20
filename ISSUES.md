@@ -1,4 +1,4 @@
-# Dobra — Known Bugs
+# Dobra — Issues
 
 <!-- One section per confirmed bug. Number sequentially (B1, B2, …) — numbers permanent,
      never reused. Root-cause analysis stays here; resolved entries are deleted (git is the history).
