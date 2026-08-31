@@ -157,7 +157,7 @@ Clean.
 
 *promote when the work is green, or say which reason applies — /roundup Phase 5*
 
-- code/dobra — feature/issues-rename is 1 ahead of main
+- code/dobra — feature/issues-rename is 2 ahead of main
 
 ### Remote branches already merged into their base
 
