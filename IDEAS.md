@@ -15,3 +15,4 @@
 - visualize context trees folding/unfolding — a dobra viz of the fold structure animating (INBOX 2026-07)
 - mine the Fable-5 system-prompt leak for context-folding insights → apply to dobra (INBOX 2026-07); links in refs/REFS.md
 - model-cost router: score cost × quality per subtask, pick best model per leaf; keep a live benchmark via OpenRouter API (INBOX 2026-07)
+- mipmap / 3D-LOD for LLM context: a fold carries several resolutions of itself and the reader picks the coarsest one that still answers — Lucas's framing, prompted by the Headroom plugin (INBOX 2026-08-21); ref in refs/REFS.md

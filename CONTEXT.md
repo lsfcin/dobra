@@ -47,19 +47,19 @@ should converge on a shared Carry-block / folded-context convention. See
 
 | Subdirectory | Description |
 |--------------|-------------|
-| [`refs/`](refs/CONTEXT.md) | Captured references for dobra — tier-1 links in [REFS.md](refs/REFS.md); promote… |
+| [`refs/`](refs/CONTEXT.md) | Captured references for dobra — tier-1 links in [REFS.md](refs/REFS.md); promote to `<slug>.yaml` for deep study (schema: `academy/papers/*/refs/CONTEXT.md`). |
 
 | File | Interface | Description |
 |------|-----------|-------------|
 | [`dobra/__init__.py`](dobra/__init__.py) | [`dobra/__init__.pyi`](dobra/__init__.pyi) | **facade** — Dobra package facade — public API grows here as kernel modules land (SPECS.md interfaces). |
-| [`ISSUES.md`](ISSUES.md) | — | Dobra — Known Bugs |
-| [`DECISIONS.md`](DECISIONS.md) | — | Append-only decision log. Every entry has literature basis + invalidated-if… |
-| [`EVAL.md`](EVAL.md) | — | Benchmarks, metrics, and baselines are FIXED here before the code that runs them… |
-| [`IDEAS.md`](IDEAS.md) | — | Anti-scatter valve. Mid-task ideas land here as one-liners, NEVER in code… |
-| [`README.md`](README.md) | — | Context folding + small local models: match frontier LLMs on long-horizon tasks… |
-| [`ROADMAP.md`](ROADMAP.md) | — | Pending work only. Completed milestones are deleted (git is the history). Task… |
-| [`SETUP.md`](SETUP.md) | — | Zero to running on a clean machine. Reference platform: RTX 3050 Laptop 6GB… |
-| [`SPECS.md`](SPECS.md) | — | Architecture constitution: folding invariant, domain model, interfaces. Decision… |
+| [`DECISIONS.md`](DECISIONS.md) | — | Append-only decision log. Every entry has literature basis + invalidated-if trigger. Paper sessions audit these against new literature (BRIDGE duty). |
+| [`EVAL.md`](EVAL.md) | — | Benchmarks, metrics, and baselines are FIXED here before the code that runs them exists. Changing a prereg after results exist requires a DECISIONS.md entry explaining why. |
+| [`IDEAS.md`](IDEAS.md) | — | Anti-scatter valve. Mid-task ideas land here as one-liners, NEVER in code. Triage: promote to ROADMAP Backlog, send to paper inbox, or delete. Review at each milestone exit. |
+| [`ISSUES.md`](ISSUES.md) | — | Dobra — Issues |
+| [`README.md`](README.md) | — | Context folding + small local models: match frontier LLMs on long-horizon tasks with a 6GB-VRAM laptop, trading time for capability. |
+| [`ROADMAP.md`](ROADMAP.md) | — | Pending work only. Completed milestones are deleted (git is the history). Task IDs are permanent (D<milestone>.<n>). |
+| [`SETUP.md`](SETUP.md) | — | Zero to running on a clean machine. Reference platform: RTX 3050 Laptop 6GB VRAM, 14GB RAM, Linux. |
+| [`SPECS.md`](SPECS.md) | — | Architecture constitution: folding invariant, domain model, interfaces. Decision log lives in DECISIONS.md. |
 | [`models.yaml`](models.yaml) | — | Model inventory — the ONLY source of model availability (SPECS principle 6). Edit per machine; router adapts. |
 | [`tests/test_smoke.py`](tests/test_smoke.py) | [`tests/test_smoke.pyi`](tests/test_smoke.pyi) | Smoke test — proves the verify:fast gate wiring; real suites arrive with each D-task. |
 <!-- routing:end -->
