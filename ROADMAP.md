@@ -20,6 +20,8 @@ Milestone D0 active — nothing started. Next task: D0.1.
 
 ## Backlog
 
+- [ ] Assess OpenHarness (refs/REFS.md) and whether Dobra can bound the desktop hyperagent's cross-session context while preserving user decisions; application assessment in ../../core/ROADMAP.md (high priority, week).
+
 - Chat REPL (`dobra chat`) — after D2
 - opencode adapter — parked in IDEAS.md until kernel stable
 - GAIA subset eval — D3 planning decides scope
