@@ -2,6 +2,7 @@
 > Tier-1 capture: one line per ref. Promote to `<slug>.yaml` when a ref earns real study.
 
 ## Context folding + agents
+- [mcptoon — gittrend.io](https://www.instagram.com/reel/Demkg_Xgmmz/?rpxt=MXR3bHJsdDE3a3Bjcw==) — [src: web:instagram.com, gittrend.io] Author demonstrates on-demand discovery of Model Context Protocol (MCP) tools and skills; token-saving claims unverified. Assess retrieval and context budgets against the folding invariant: ../ROADMAP.md [mcptoon-context]; shared assessment: ../../../core/ROADMAP.md.
 - [CL4R1T4S — Fable-5 system-prompt leak](https://github.com/elder-plinius/CL4R1T4S) — mine for context-folding insights
 - [Fable-5 leak coverage](https://memeburn.com/claude-fable-5-system-prompt-leak-shakes-ai-industry/) · [analysis](https://www.ayautomate.com/blog/claude-fable-5-system-prompt-leak)
 - [arxiv 2601.10112](https://arxiv.org/pdf/2601.10112) — graphs + context folding for agents

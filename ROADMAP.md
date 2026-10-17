@@ -20,6 +20,8 @@ Milestone D0 active — nothing started. Next task: D0.1.
 
 ## Backlog
 
+- [ ] [mcptoon-context] Assess mcptoon discovery, on-demand schema retrieval and measured context cost against Dobra's folding invariant without changing configuration before comparison; refs/REFS.md, shared assessment in ../../core/ROADMAP.md.
+
 - [ ] Assess OpenHarness (refs/REFS.md) and whether Dobra can bound the desktop hyperagent's cross-session context while preserving user decisions; application assessment in ../../core/ROADMAP.md (high priority, week).
 
 - Chat REPL (`dobra chat`) — after D2
