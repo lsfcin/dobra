@@ -20,6 +20,8 @@ Milestone D0 active — nothing started. Next task: D0.1.
 
 ## Backlog
 
+- [ ] [textfold] Test TextFold's 5-level fold as the folded-context format for SLM leaves vs dobra's current fold: fidelity, tokens, leaf accuracy; more levels is not better context. Ref: refs/REFS.md [TextFold].
+
 - [ ] [advisor] Compare executor-plus-advisor with current model routing on matched tasks, measuring quality, retries, total tokens and quota consumption. Ref: refs/REFS.md [advisor] (Instagram lead).
 
 - [ ] [respan-gateway] Assess Respan against existing provider integration: format/tool fidelity, streaming, fallback, observability and total cost; hedging can duplicate billed requests. Model-request routing is distinct from CLI session management. Ref: refs/REFS.md [Respan].

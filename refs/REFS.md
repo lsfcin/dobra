@@ -53,3 +53,5 @@
 - [Alexandria](https://lucassf.pages.dev/wos/alexandria) — Firecrawl; Instagram DfMiFm0Oc0N: source/index access does not guarantee answer correctness. Task: ../ROADMAP.md [firecrawl].
 - [Infinity](https://lucassf.pages.dev/wos/infinity) — GitHub/hydro-project; Instagram De9or1Jienw: hibernation/tool events; 75k waiting states do not imply 75k simultaneous inferences. Task: ../ROADMAP.md [infinity-runtime].
 - [Claude advisor](https://lucassf.pages.dev/wos/advisor) — Instagram/sully.omarr: stronger-model consultation; savings unverified, advisor may increase tokens; [post](https://lucassf.pages.dev/wos/advisor-post); task: ../ROADMAP.md [advisor].
+- [TextFold](https://lucassf.pages.dev/wos/textfold) — [post](https://lucassf.pages.dev/wos/textfold-post): folds a document into 5 zoom levels, each paragraph links to the source. [textfold].
+- [TwIL-8B](https://lucassf.pages.dev/wos/twil-8b) — 8B coder; scores are bf16, not Q4; canonical: ../../../core/refs/REFS.md; [twil-8b] in core/ROADMAP.md.

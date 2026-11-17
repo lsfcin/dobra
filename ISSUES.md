@@ -35,10 +35,10 @@
 | Header fields naming code that is not there | 0 |
 | Truncated routing descriptions | 0 |
 | Constraints trapped in a CONTEXT.md head | 1 |
-| Local branches holding unpromoted work | 0 |
+| Local branches holding unpromoted work | 1 |
 | Work that exists on this disk and nowhere else | 0 |
 | Local branches already merged into their base | 0 |
-| Remote branches already merged into their base | 1 |
+| Remote branches already merged into their base | 0 |
 
 *A check with no findings is the `0` in that table and nothing more. Only a check with something to show gets a section below.*
 
@@ -58,7 +58,7 @@
 - CONTEXT.md: retired token 'tier' survives (line 17).
 - EVAL.md: retired token 'tier' survives (line 16).
 - IDEAS.md: retired token 'tier' survives (line 13).
-- ROADMAP.md: retired token 'tier' survives (line 123).
+- ROADMAP.md: retired token 'tier' survives (line 125).
 - SPECS.md: retired token 'slug' survives (line 141).
 - SPECS.md: retired token 'tier' survives (line 57).
 - refs/CONTEXT.md: retired token 'slug' survives (line 2).
@@ -77,10 +77,10 @@
 
 - CONTEXT.md: head is 628 tok carrying 2 constraint(s), over the warning
 
-### Remote branches already merged into their base
+### Local branches holding unpromoted work
 
-*safe to delete, and outward-facing — `git -C <repo> push origin --delete <branch>`, Lucas*
+*promote when the work is green, or say which reason applies — /roundup Phase 5*
 
-- . — 1 merged into main: git -C . push origin --delete feature/inbox-triage-20261016
+- . — feature/inbox-triage-20261016 is 1 ahead of main
 
 <!-- entropy:end -->
