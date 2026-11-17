@@ -20,6 +20,58 @@ Milestone D0 active — nothing started. Next task: D0.1.
 
 ## Backlog
 
+- [ ] [advisor] Compare executor-plus-advisor with current model routing on matched tasks, measuring quality, retries, total tokens and quota consumption. Ref: refs/REFS.md [advisor] (Instagram lead).
+
+- [ ] [respan-gateway] Assess Respan against existing provider integration: format/tool fidelity, streaming, fallback, observability and total cost; hedging can duplicate billed requests. Model-request routing is distinct from CLI session management. Ref: refs/REFS.md [Respan].
+
+- [ ] [colibri-streaming] High priority: assess JustVugg/colibri disk-streaming inference; pin version/model, RAM/storage, first-response latency and tokens/s before any download. Compare a usable local configuration with the current baseline; retain the old unidentified GPU-runtime lead separately. Ref: refs/REFS.md [Colibri].
+
+- [ ] [glm52-comparison] Compare GLM-5.2 on matched coding tasks with the same harness and budget; distinguish model quality, tool orchestration, hosted cost, local hardware and persistent memory. Share local-feasibility work with [colibri-streaming]. Ref: refs/REFS.md [GLM-5.2].
+
+- [ ] [infinity-runtime] Assess Infinity yielding/hibernation and tool events against existing orchestration: persisted state, interruption recovery, session continuity, memory and bounded concurrency; waiting states are not simultaneous model inference. Ref: refs/REFS.md [Infinity].
+
+- [ ] [taiga-s1] Assess the planner/tiny-executor split as a specialized baseline: training cost, state representation, completion checks and generalization limits; no evidence yet for general context-folding performance. Ref: refs/REFS.md [Taiga-S1].
+
+- [ ] [qwen-modified] Assess whether the reported modified Qwen variant serves a concrete local task; verify provenance, licence, hardware fit and task quality against the original model. Ref: refs/REFS.md [Qwen modified].
+
+- [ ] [omega-loop] Compare the reported planner/worker/check loop with existing routing and file-based orchestration; measure total cost, retries and accepted output quality. Ref: refs/REFS.md [Omega planner/worker loop].
+
+- [ ] [openviking-context] Avaliar arquitetura do OpenViking em relação aos mecanismos de context-folding e memória do Dobra. Ref: refs/REFS.md [openviking-context].
+
+- [ ] [context-evidence] Compare focused context, planning and meaningful verification with existing practice using measured local outcomes, not the creator's invented 100k quality cutoff. Ref: refs/REFS.md [context-evidence].
+
+- [ ] [gpu-unlock] Assess whether any supported compute-bound workload transfers to our actual GPU and pipeline, keeping hardware, precision, power and whole-task results distinct. Ref: refs/REFS.md [gpu-unlock].
+
+- [ ] [scaledown] Compare narrow classification/extraction/summarization baselines for correctness and cost, distinguishing schema validity, semantic accuracy, generation and hosted availability. Ref: refs/REFS.md [scaledown].
+
+- [ ] [pstack] Assess completion criteria, invariants, behavior evidence and bounded parallel work against our existing workflow; separate portability and throughput claims from demonstrated facts. Ref: refs/REFS.md [pstack].
+
+- [ ] [code-mode] Compare code-owned tool composition and filtered results with the current workflow, retaining direct calls where useful and requiring no Model Context Protocol adoption. Ref: refs/REFS.md [code-mode].
+
+- [ ] [r-cli] Compare one matched coding task for quality, total tokens/cost, memory-service behavior and portability before changing a harness or provider. Ref: refs/REFS.md [r-cli].
+
+- [ ] [model-continuity] Assess proportionate source/version continuity for models we actually use, checking licence, integrity and storage; do not infer a platform-wide ban or download this oversized derivative. Ref: refs/REFS.md [model-continuity].
+
+- [ ] [unlimited-ocr] Compare one representative long document with our current extraction path for fidelity, reading order, runtime and supported memory; distinguish original and v2 results. Ref: refs/REFS.md [unlimited-ocr]. Include additional capture DfTb1XOGW_2; 100 pages is a source claim, not a guarantee.
+
+- [ ] [airllm] Assess layer/expert streaming as a capacity-versus-latency baseline, retaining measured hardware, terabyte storage and time-per-token limits before any download decision. Ref: refs/REFS.md [airllm]. Include Kimi-in-C capture DcjlgleALHo; verify implementation and measured seconds/token before any download.
+
+- [ ] [harness2] Compare controlled harness-improvement loops with existing orchestration, including model-call budget, held-out evaluation, judge bias and retained sandbox restrictions. Ref: refs/REFS.md [harness2].
+
+- [ ] [deepinfer] Track the likely DeepInfer release as datacenter engineering and assess research relevance without presenting it as a consumer-laptop or independently benchmarked option. Ref: refs/REFS.md [deepinfer].
+
+- [ ] [dependency-provenance] Assess how dependency-source verification and locked inventories cover the documented hallucinated-package risk; use the original benign case and reviewed study in teaching. Ref: refs/REFS.md [dependency-provenance].
+
+- [ ] [unsloth-browser] Assess a bounded browser task with documented permission/network limits and memory headroom before selecting a local browser-agent setup. Ref: refs/REFS.md [unsloth-browser].
+
+- [ ] [firecrawl] Compare Firecrawl with our existing fetch/search on representative difficult sources, recording coverage, deployment duties, access failures and total cost. Ref: refs/REFS.md [firecrawl]. Include Alexandria: compare source coverage, citation support, freshness, access failures and total cost; retrieval does not guarantee factual answers.
+
+- [ ] [mesh-llm] Assess trusted-node availability, network cost and model compatibility; distinguish client routing from fitting a large model on this laptop. Ref: refs/REFS.md [mesh-llm].
+
+- [ ] [strata-local] Record the supported memory/storage/context/quality tradeoffs and compare them with our laptop before selecting any local-inference trial. Ref: refs/REFS.md [strata-local].
+
+- [ ] [qwenputer] Assess what Qwenputer demonstrates beyond external deterministic tools, retaining the merged-model limitation, selected-test scope and absent accepted-paper finding. Ref: refs/REFS.md [qwenputer].
+
 - [ ] [mcptoon-context] Assess mcptoon discovery, on-demand schema retrieval and measured context cost against Dobra's folding invariant without changing configuration before comparison; refs/REFS.md, shared assessment in ../../core/ROADMAP.md.
 
 - [ ] Assess OpenHarness (refs/REFS.md) and whether Dobra can bound the desktop hyperagent's cross-session context while preserving user decisions; application assessment in ../../core/ROADMAP.md (high priority, week).
